@@ -15,10 +15,9 @@ export default function Home() {
       .get(`https://pokeapi.co/api/v2/pokemon/${pokemonData}`)
       .then((res) => {
         setSelectedPokemon(res.data);
-        console.log(res.data);
       })
       .catch((err) => {
-        console.log(err);
+        alert("Pokemon not found");
       });
   };
   const handlePokemonSelection = (pokemonData) => {

@@ -10,7 +10,6 @@ function PokemonCard({ pokemon, onPokemonSelect }) {
       setPokemonData(res.data);
     });
   }, [pokemon.url]);
-  console.log(pokemonData);
   return (
     <Box>
       {pokemonData === null ? (
