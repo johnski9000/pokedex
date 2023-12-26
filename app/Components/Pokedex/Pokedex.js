@@ -6,7 +6,7 @@ import { Box, Text } from "@radix-ui/themes";
 function Pokedex({ selectedPokemon }) {
   return (
     <div class="h-96 flex max-w-md">
-      <div class="min-w-42 sm:min-w-56 bg-red-600 h-full w-1/2 grid box-border grid-rows-[23%,50%,27%] border-2 border-solid border-black rounded-l-lg rounded-tr-lg">
+      <div class="min-w-42 max-w-[200px] sm:max-w-[225px] sm:min-w-56 bg-red-600 h-full w-1/2 grid box-border grid-rows-[23%,50%,27%] border-2 border-solid border-black rounded-l-lg rounded-tr-lg">
         <div className="relative">
           <div className="absolute flex">
             <div className="w-[50px] h-[50px] rounded-full bg-white border-[2px] border-black flex justify-center items-center m-[5px] mt-[2px] ml-[5px]">
@@ -45,7 +45,7 @@ function Pokedex({ selectedPokemon }) {
           </Box>
         </Box>
       </div>
-      <div class="min-w-40 sm:min-w-52 w-1/2 h-full grid grid-rows-[23%,40%,34%]">
+      <div class="min-w-40 max-w-[175px] sm:max-w-[225] sm:min-w-52 w-1/2 h-full grid grid-rows-[23%,40%,34%]">
         <div className="z-10">
           <div className=" bg-red-600 h-full mt-[17.5%] border-t-[3px] border-r-[3px] border-black rounded-tr-[10px] w-full"></div>
         </div>
@@ -56,15 +56,17 @@ function Pokedex({ selectedPokemon }) {
           <Box className="absolute bottom-4 left-4 flex bg-gray-300 px-2 py-1 border-black border-2 rounded-lg">
             {selectedPokemon &&
               selectedPokemon.types.map((type, index) => (
-                <Box key={index}>
+                <Text key={index} className="text-xs sm:text-sm">
                   {type.type.name}
                   {index === 0 && <span>/</span>}
-                </Box>
+                </Text>
               ))}
           </Box>
           <Box className="absolute bottom-4 right-4 flex bg-gray-300 px-2 py-1 border-black border-2 rounded-lg">
             {selectedPokemon && (
-              <Text>#{selectedPokemon.game_indices[10].game_index}</Text>
+              <Text className="text-xs sm:text-sm">
+                #{selectedPokemon.game_indices[10].game_index}
+              </Text>
             )}
           </Box>
         </div>
