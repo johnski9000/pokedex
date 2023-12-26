@@ -39,6 +39,7 @@ function SideScreen({ selectedPokemon }) {
                     defaultValue={[stat.base_stat]}
                     size="1"
                     className="mt-1"
+                    disabled
                   />
                 </Box>
               ))}
