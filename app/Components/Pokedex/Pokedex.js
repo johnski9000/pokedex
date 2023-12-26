@@ -26,7 +26,12 @@ function Pokedex({ selectedPokemon }) {
               </div>
             </div>
           </div>
-          <svg height="100" width="225" className="left-svg" class="absolute">
+          <svg
+            height="100"
+            width="225"
+            className="left-svg"
+            class="absolute w-[200px] sm:w-[225px]"
+          >
             <polyline
               points="0,75 70,75 90,38 224,38"
               style={{ fill: "none", stroke: "black", strokeWidth: 3 }}
