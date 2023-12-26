@@ -12,7 +12,7 @@ export default function Home() {
 
   const handlePokemonSearch = (pokemonData) => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonData}`)
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonData.toLowerCase()}`)
       .then((res) => {
         setSelectedPokemon(res.data);
       })
