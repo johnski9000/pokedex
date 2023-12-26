@@ -38,7 +38,7 @@ function Pokedex({ selectedPokemon }) {
             ></polyline>
           </svg>
         </div>
-        <div className="w-[80%] sm:w-[100%] flex just items-center flex-col">
+        <div className="mt-3 sm:mt-0 w-[80%] sm:w-[100%] flex just items-center flex-col ">
           <div className=" pokedex-main-screen h-[85%] w-[85%] border-[3px] border-black bg-white relative overflow-x-hidden overflow-y-scroll rounded-lg flex justify-center items-center">
             <MainScreen selectedPokemon={selectedPokemon} />
             <div className="bg-red-500 w-3 h-3 absolute border border-black rounded-full bottom-1 left-2 "></div>
