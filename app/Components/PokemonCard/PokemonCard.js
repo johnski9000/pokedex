@@ -14,7 +14,7 @@ function PokemonCard({ pokemon, onPokemonSelect }) {
     });
   }, [pokemon.url]);
   return (
-    <Box className="h-[450px] p-6 bg-white/20 backdrop-blur-sm relative shadow-xl rounded-[20px]">
+    <Box className="h-[450px] p-6 bg-white/20 backdrop-blur-sm relative shadow-xl rounded-[20px] hover:-translate-y-1 transition-all hover:cursor-pointer">
       {pokemonData === null ? (
         <div className="absolute">
           <Image

@@ -14,7 +14,7 @@ function Description({ pokemonData }) {
     }
   }, []);
   return (
-    <Box className="pt-6">
+    <Box className="w-full py-2">
       {description === null ? (
         <div>loading</div>
       ) : (

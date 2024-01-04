@@ -9,7 +9,7 @@ function SearchBar({ onPokemonSelect }) {
     <Flex className="items-center gap-4 mt-4 mb-0">
       <TextField.Root className="h-auto">
         <TextField.Input
-          placeholder="Search the docs…"
+          placeholder="Find your pokemon..."
           onChange={(e) => setSearchItem(e.target.value)}
         />
       </TextField.Root>

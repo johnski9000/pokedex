@@ -25,10 +25,14 @@ body {
       400px 0;
   }
 }
+body::-webkit-scrollbar,
+#open > div.rt-Box.flex-1.overflow-y-scroll::-webkit-scrollbar {
+  display: none;
+}
 body
   > div
   > div
-  > div.rt-Box.max-w-screen-xl.w-\[90\%\].border-\[1px\]rounded-lg.overflow-y-scroll.overflow-hidden.mt-6.mb-6.sm\:mt-20.h-full.flex-1::-webkit-scrollbar {
+  > div.rt-Box.max-w-screen-xl.w-\[90\%\].border-\[1px\]rounded-lg.overflow-y-scroll.mt-6.mb-6.sm\:mt-20.h-full.flex-1::-webkit-scrollbar {
   display: none;
 }
 
@@ -94,4 +98,22 @@ body
 
 .dragon {
   filter: drop-shadow(2px 2px 19px rgba(138, 43, 226, 0.7));
+}
+#closed {
+  display: none;
+}
+#open {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  animation: slide-up 0.5s ease-in-out;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

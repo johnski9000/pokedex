@@ -5,6 +5,7 @@ import PokemonList from "./Components/PokemonList/PokemonList";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Overlay from "./Components/Overlay/Overlay";
 
 export default function Home() {
   const [initialData, setInitialData] = useState([]);
@@ -32,7 +33,10 @@ export default function Home() {
   return (
     <Flex direction={"column"} className="w-screen h-screen items-center">
       <SearchBar onPokemonSelect={handlePokemonSearch} />
-      {/* <Pokedex selectedPokemon={selectedPokemon} /> */}
+      <Overlay
+        selectedPokemon={selectedPokemon}
+        setSelectedPokemon={setSelectedPokemon}
+      />
       {initialData.length === 0 ? (
         <div>loading</div>
       ) : (

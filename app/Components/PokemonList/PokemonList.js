@@ -47,7 +47,7 @@ function PokemonList({ onPokemonSelect, initialData }) {
 
   return (
     <Box
-      className="max-w-screen-xl w-[90%]  border-[1px]rounded-lg overflow-y-scroll overflow-hidden mt-6 mb-6 sm:mt-20 h-full flex-1"
+      className="max-w-screen-xl w-[90%]  border-[1px]rounded-lg overflow-y-scroll mt-6 mb-6 sm:mt-20 h-full flex-1"
       ref={container}
     >
       <Section size="0" py={"2"} px={"2"} className="opacity-100 h-full">

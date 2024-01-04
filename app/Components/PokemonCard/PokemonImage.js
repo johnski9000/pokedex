@@ -48,7 +48,7 @@ function PokemonImage({ pokemonData }) {
         <Text>loading</Text>
       ) : (
         <Image
-          src={pokemonData.sprites.front_default}
+          src={pokemonData?.sprites.other["official-artwork"].front_default}
           width={100}
           height={200}
           alt={pokemonData.name}
