@@ -8,7 +8,7 @@ function Overlay({ selectedPokemon, setSelectedPokemon }) {
     <Flex
       direction={"column"}
       id={selectedPokemon ? "open" : "closed"}
-      className="absolute top-10 left-10 right-10 bottom-10 bg-white  z-10 transition-all rounded-[20px] p-10"
+      className="absolute top-4 left-4 right-4 bottom-4 sm:top-10 sm:left-10 sm:right-10 sm:bottom-10 bg-white  z-10 transition-all rounded-[20px] p-4 sm:p-10"
     >
       <Box className="flex-1 flex justify-center items-center relative">
         <Image
