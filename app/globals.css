@@ -25,3 +25,73 @@ body {
       400px 0;
   }
 }
+body
+  > div
+  > div
+  > div.rt-Box.max-w-screen-xl.w-\[90\%\].border-\[1px\]rounded-lg.overflow-y-scroll.overflow-hidden.mt-6.mb-6.sm\:mt-20.h-full.flex-1::-webkit-scrollbar {
+  display: none;
+}
+
+.normal {
+  filter: drop-shadow(2px 2px 19px rgb(80, 80, 80));
+}
+
+.fighting {
+  filter: drop-shadow(2px 2px 19px rgba(128, 0, 0, 1));
+}
+
+.flying {
+  filter: drop-shadow(2px 2px 19px rgba(135, 206, 250, 1));
+}
+
+.poison {
+  filter: drop-shadow(2px 2px 19px rgba(128, 0, 128, 1));
+}
+
+.ground {
+  filter: drop-shadow(2px 2px 19px rgba(139, 69, 19, 1));
+}
+
+.rock {
+  filter: drop-shadow(2px 2px 19px rgba(139, 69, 19, 1));
+}
+
+.bug {
+  filter: drop-shadow(2px 2px 19px rgba(107, 142, 35, 1));
+}
+
+.ghost {
+  filter: drop-shadow(2px 2px 19px rgba(128, 0, 128, 1));
+}
+
+.steel {
+  filter: drop-shadow(2px 2px 19px rgba(169, 169, 169, 1));
+}
+
+.fire {
+  filter: drop-shadow(2px 2px 19px rgba(255, 0, 0, 1));
+}
+
+.water {
+  filter: drop-shadow(2px 2px 19px rgba(0, 0, 255, 1));
+}
+
+.grass {
+  filter: drop-shadow(2px 2px 19px rgba(0, 128, 0, 1));
+}
+
+.electric {
+  filter: drop-shadow(2px 2px 19px rgba(255, 255, 0, 1));
+}
+
+.psychic {
+  filter: drop-shadow(2px 2px 19px rgba(255, 20, 147, 0.7));
+}
+
+.ice {
+  filter: drop-shadow(2px 2px 19px rgba(173, 216, 230, 0.7));
+}
+
+.dragon {
+  filter: drop-shadow(2px 2px 19px rgba(138, 43, 226, 0.7));
+}

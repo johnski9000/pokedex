@@ -28,7 +28,7 @@ function PokemonList({ onPokemonSelect, initialData }) {
 
       try {
         const response = await axios.get(
-          `https://pokeapi.co/api/v2/pokemon?offset=${newStartIndex}&limit=12`
+          `https://pokeapi.co/api/v2/pokemon?offset=${newStartIndex}&limit=24`
         );
         setStartIndex(newStartIndex);
         setPokemonList((prevList) => [...prevList, ...response.data.results]);
@@ -47,11 +47,11 @@ function PokemonList({ onPokemonSelect, initialData }) {
 
   return (
     <Box
-      className="max-w-screen-xl w-[90%] bg-white/40  border-[1px] border-grey rounded-lg overflow-y-scroll overflow-hidden mt-12 sm:mt-20 max-h-48 h-full"
+      className="max-w-screen-xl w-[90%]  border-[1px]rounded-lg overflow-y-scroll overflow-hidden mt-6 mb-6 sm:mt-20 h-full flex-1"
       ref={container}
     >
-      <Section size="0" py={"2"} px={"2"} className="opacity-100">
-        <Grid columns="3" gap="3" width="auto">
+      <Section size="0" py={"2"} px={"2"} className="opacity-100 h-full">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {pokemonList.length === 0 ? (
             <div>loading...</div>
           ) : (
@@ -63,7 +63,7 @@ function PokemonList({ onPokemonSelect, initialData }) {
               />
             ))
           )}
-        </Grid>
+        </div>
       </Section>
     </Box>
   );

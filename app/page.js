@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <Flex direction={"column"} className="w-screen h-screen items-center">
       <SearchBar onPokemonSelect={handlePokemonSearch} />
-      <Pokedex selectedPokemon={selectedPokemon} />
+      {/* <Pokedex selectedPokemon={selectedPokemon} /> */}
       {initialData.length === 0 ? (
         <div>loading</div>
       ) : (
